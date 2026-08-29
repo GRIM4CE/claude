@@ -1,5 +1,5 @@
 ---
-name: quick-plan
+name: plan-quick
 description: Fast, lightweight feature plan. Use when the user wants a quick or rough plan or a sketch before coding — "quick plan", "rough plan", "sketch an approach". Not for changes involving shared state, cross-cutting concerns, a real tradeoff, or clearly more than ~5 files — use plan-feat for those. Not for bug fixes or questions that just want an answer.
 ---
 
@@ -18,4 +18,4 @@ Format, under 15 lines total:
 2. **Risks / assumptions** (one line)
 3. **Done when** (≤3-item markdown checklist)
 
-Wait for approval. Handoff: pass the plan inline to `implement-plan` (no `docs/plans/` file).
+Wait for approval. Handoff: pass the plan inline to `plan-implement` (no `docs/plans/` file).

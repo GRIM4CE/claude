@@ -1,13 +1,13 @@
 ---
-name: implement-plan
-description: Execute an approved implementation plan. Use after a plan-feat or quick-plan plan is approved, or when the user hands over a written plan and asks to build it — "implement the plan", "build it", "go ahead", "looks good, do it". Not for planning — if no approved plan exists, use plan-feat or quick-plan.
+name: plan-implement
+description: Execute an approved implementation plan. Use after a plan-feat or plan-quick plan is approved, or when the user hands over a written plan and asks to build it — "implement the plan", "build it", "go ahead", "looks good, do it". Not for planning — if no approved plan exists, use plan-feat or plan-quick.
 ---
 
 # Implement Plan
 
 ## Plan lookup
 
-Read the plan from `docs/plans/` matching the current feature; if ambiguous, ask which one. Otherwise use the most recent plan in the conversation. If none exists, do not invent one — recommend `quick-plan` or `plan-feat`.
+Read the plan from `docs/plans/` matching the current feature; if ambiguous, ask which one. Otherwise use the most recent plan in the conversation. If none exists, do not invent one — recommend `plan-quick` or `plan-feat`.
 
 Invoke `project-conventions` if it exists.
 

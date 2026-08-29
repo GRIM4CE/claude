@@ -5,7 +5,7 @@ description: Plan a feature before implementing it. Use when the user asks to pl
 
 # Plan Feature
 
-Plan with **correctness first, simplicity second**. This skill ends at plan approval; implementation is handled by `implement-plan`.
+Plan with **correctness first, simplicity second**. This skill ends at plan approval; implementation is handled by `plan-implement`.
 
 ## Step 0: Project constraints
 
@@ -41,4 +41,4 @@ Format reference: `example.md` in this skill's directory.
 
 On feedback: edit the file surgically and re-show only changed sections; never regenerate the whole plan. If published, republish to the same URL.
 
-Wait for approval before any implementation. Handoff: `implement-plan` reads the plan from `docs/plans/<slug>.md`.
+Wait for approval before any implementation. Handoff: `plan-implement` reads the plan from `docs/plans/<slug>.md`.
