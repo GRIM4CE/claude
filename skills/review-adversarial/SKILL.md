@@ -30,8 +30,9 @@ After the review completes:
 
 ## 4. Output
 
-Write the write-up to `docs/reviews/<slug>.md` and show it inline. Do not load artifact-design and do not publish.
-
-Only if the user asks to share: publish the file as a Markdown artifact (not HTML, no artifact-design) unless HTML is explicitly requested.
-
-Finish with the verdict in one or two sentences and the file path (or link if published).
+- Slug: reuse the plan's filename from `docs/plans/` if one exists, otherwise the current branch name.
+- Write the full write-up (including all findings) to `docs/reviews/<slug>.md`.
+- Inline, show only the findings: a ranked list with severity, file:line, one-line description, and resolution (fixed / accepted / disputed). Do not print the rest of the file.
+- After writing, open the file in the user's editor: run `code <path>` if available, otherwise `open <path>`.
+- Do not load artifact-design and do not publish by default. Only if the user asks to share: publish the file as a Markdown artifact (not HTML, no artifact-design) unless HTML is explicitly requested.
+- Finish with the verdict in one or two sentences and the file path (or link if published).
