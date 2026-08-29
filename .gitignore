@@ -1,0 +1,12 @@
+# Ignore everything by default; explicitly allow config worth versioning.
+/*
+
+# Allowed
+!/.gitignore
+!/CLAUDE.md
+!/settings.json
+!/skills/
+
+# Never commit local/private variants even if added later
+settings.local.json
+.credentials.json
