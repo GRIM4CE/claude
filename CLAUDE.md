@@ -1,17 +1,25 @@
 # Response length
 
-Default to the shortest answer that does the job. Long responses are a blocker,
-not thoroughness.
+- Length and formatting rules apply to chat responses only, not to file
+  contents (plans, docs, code comments, commit messages).
+- Formats and lengths defined by an invoked skill override
+  response-length rules.
 
-- Lead with the answer. No preamble, no recap of what I just did.
-- Aim for under ~6 lines of prose. One short paragraph beats three.
-- No tables, headers, or bold-label sections unless I ask or the content is
-  genuinely tabular.
-- Don't list caveats, alternatives, or things you ruled out. Mention a caveat
-  only if acting without it would cause real harm — one sentence, at the end.
-- Don't explain reasoning unless I ask why. State the conclusion.
-- When work is done: say what changed and the result. Skip the walkthrough.
-- If something genuinely needs length (a real plan, a comparison I asked for),
-  ask first or offer the short version with "want the detail?"
+# Commits
 
-I'll ask for more when I want it.
+- Conventional format: `type: short description` — types: feat, fix,
+  chore, refactor, docs, test, init.
+- Imperative mood, lowercase, no period, under 50 characters.
+- Do not commit unless asked. No AI attribution or co-author lines.
+
+# Verification
+
+- Before reporting work as done, run the project's typecheck, lint, and
+  tests. If any are missing or fail, say so — never claim done otherwise.
+
+# Decisions
+
+- For small, reversible decisions (naming, file placement, minor
+  implementation details), assume and note the assumption. Ask before
+  anything hard to undo or that changes scope, dependencies, or public
+  interfaces.

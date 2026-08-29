@@ -18,6 +18,7 @@
     "ruby-lsp@claude-plugins-official": true
   },
   "advisorModel": "sonnet",
+  "outputStyle": "Concise",
   "voice": {
     "enabled": true,
     "mode": "hold"
