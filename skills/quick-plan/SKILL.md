@@ -1,20 +1,21 @@
 ---
 name: quick-plan
-description: Fast, lightweight feature plan (~5 minutes). Use when the user wants a quick or rough plan, a sanity check on an approach, or a sketch before coding — "quick plan", "rough plan", "how would you tackle", "sketch an approach". Not for large or risky features — use plan-feat for those. Not for bug fixes or questions that just want an answer.
+description: Fast, lightweight feature plan. Use when the user wants a quick or rough plan or a sketch before coding — "quick plan", "rough plan", "sketch an approach". Not for changes involving shared state, cross-cutting concerns, a real tradeoff, or clearly more than ~5 files — use plan-feat for those. Not for bug fixes or questions that just want an answer.
 ---
 
 # Quick Plan
 
-Time-box to ~5 minutes total. Correctness first, simplicity second; pick **one** approach, present no options.
+Correctness first, simplicity second; pick **one** approach, present no options.
 
-- Skip the convention-skill scan; state any known convention as an assumption.
-- Read only the closest existing feature and the files you expect to touch — no broad exploration.
+- Read the closest existing feature plus the files you expect to touch — ~6 files max, no broad exploration.
+- Invoke `project-conventions` if it exists; do not scan for other skills.
+- If exploration reveals shared state, cross-cutting changes, a genuine tradeoff, or clearly more than ~5 files to change, stop and recommend `plan-feat`.
 - Present inline as markdown; write no files, publish nothing.
 
 Format, under 15 lines total:
 
 1. **What we will do** (≤3 bullets, include files to touch)
-2. **Risks** (one line)
+2. **Risks / assumptions** (one line)
 3. **Done when** (≤3-item markdown checklist)
 
 Wait for approval. Handoff: pass the plan inline to `implement-plan` (no `docs/plans/` file).
